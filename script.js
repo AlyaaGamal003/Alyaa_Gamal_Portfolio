@@ -229,3 +229,10 @@ document.querySelectorAll('.journey-milestone').forEach(milestone => {
     milestone.style.transition = "opacity 0.5s ease, transform 0.5s ease";
     milestoneObserver.observe(milestone);
 });
+
+// Add this to your script.js file
+document.querySelector('.btn-cv').addEventListener('click', function() {
+    // You can add analytics tracking here
+    console.log('CV downloaded from hero section');
+    // Example: gtag('event', 'cv_download', { 'event_category': 'engagement' });
+});
