@@ -1,3 +1,20 @@
+/* Set dark mode as default */
+:root {
+    --text-dark: #f3f4f6;
+    --text-light: #d1d5db;
+    --bg-light: #111827;
+    --bg-white: #1f2937;
+    --bg-card: #374151;
+}
+
+/* Light mode variables - will be applied only if data-theme="light" */
+[data-theme="light"] {
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --bg-white: #ffffff;
+    --bg-card: #ffffff;
+}
 :root {
     --primary: #2563eb;
     --primary-dark: #1d4ed8;
