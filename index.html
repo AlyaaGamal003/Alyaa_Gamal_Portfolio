@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alyaa Gamal - Portfolio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,6 +21,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#story">Journey</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
@@ -48,145 +50,242 @@
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/AlyaaGamal003/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alyaa-gamal-885016278" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:galyaa742004@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="hero-image fade-in">
-                    <img src="images/logo.png" alt="Profile" class="profile-img">
+                    <div class="image-container">
+                        <img src="images/logo.png" alt="Alyaa Gamal" class="profile-img">
+                        <div class="floating-element"></div>
+                        <div class="floating-element"></div>
+                        <div class="floating-element"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="about-container">
-        <h2 class="section-title fade-in">About Me</h2>
-        <p class="fade-in">
-            I’m a backend developer and computer science student passionate about designing efficient,
-            secure, and scalable systems. My expertise includes <strong>.NET, Node.js, Laravel, and SQL</strong>,
-            with experience in API development, database design, and performance optimization.
-            I enjoy solving backend challenges and delivering reliable solutions.
-        </p>
-    </div>
-</section>
-<!-- Education Section -->
-<section id="education" class="education-timeline">
-    <h2 class="section-title fade-in">Education</h2>
-    <div class="timeline">
 
-        <div class="timeline-item fade-in">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>Bachelor of Computer Science</h3>
-                <span class="education-duration">2022 – 2026</span>
-                <p class="education-institution">Benha University</p>
-                <p class="education-gpa"><strong>GPA:</strong> 3.6</p>
-                <p class="education-coursework">
-                    <strong>Relevant Coursework:</strong> Object-Oriented Programming, Data Structure, Algorithms,
-                    Software Engineering, Database, System Analysis
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content fade-in">
+                <p>
+                    I'm a backend developer and computer science student passionate about designing efficient,
+                    secure, and scalable systems. My expertise includes <strong>.NET, Node.js, Laravel, and SQL</strong>,
+                    with experience in API development, database design, and performance optimization.
+                    I enjoy solving backend challenges and delivering reliable solutions.
                 </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="number">5+</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">10+</span>
+                        <span class="label">Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">3.6</span>
+                        <span class="label">University GPA</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills">
+    <!-- Personal Story Section -->
+<section id="story" class="story">
     <div class="container">
-        <h2 class="section-title fade-in">Skills</h2>
-
-        <div class="skills-grid fade-in">
-            <!-- Languages & Databases -->
-            <div class="skill-category">
-                <h3>Languages & Databases</h3>
-                <div class="skill-bar"><span style="width: 90%;">C#</span></div>
-                <div class="skill-bar"><span style="width: 85%;">C++</span></div>
-                <div class="skill-bar"><span style="width: 85%;">Java</span></div>
-                <div class="skill-bar"><span style="width: 85%;">Python</span></div>
-                <div class="skill-bar"><span style="width: 90%;">JavaScript</span></div>
-                <div class="skill-bar"><span style="width: 90%;">PHP</span></div>
-                <div class="skill-bar"><span style="width: 92%;">SQL</span></div>
+        <h2 class="section-title fade-in">My Journey</h2>
+        <div class="story-content fade-in">
+            <div class="story-text">
+                <p>My interest in technology grew naturally as I explored how software can solve real problems. 
+                During my early studies, I was always curious about how systems work behind the scenes, and that 
+                curiosity quickly turned into a passion for backend development.</p>
+                
+                <p>Over time, I started experimenting with different technologies—from building small projects in 
+                C# and SQL to developing complete web applications using .NET and Node.js. One of my first big steps 
+                was working on an eCommerce project during the ITI program, which gave me hands-on experience in 
+                creating secure and scalable systems.</p>
+                
+                <p>At university, I continued pushing my boundaries by diving into OpenGL game development, AR with 
+                Unity, and advanced SQL. Each project not only improved my technical skills but also taught me how 
+                to think critically and design solutions that are both efficient and practical.</p>
+                
+                <p>Now, as a Computer Science student and backend developer in the DEPI program, I’m focused on 
+                mastering system design, database management, and modern backend frameworks. What excites me most 
+                is turning complex problems into elegant solutions and seeing technology make a real difference.</p>
             </div>
-
-            <!-- Frameworks & Libraries -->
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skill-bar"><span style="width: 92%;">.NET Core</span></div>
-                <div class="skill-bar"><span style="width: 90%;">ASP.NET MVC</span></div>
-                <div class="skill-bar"><span style="width: 88%;">Laravel</span></div>
-                <div class="skill-bar"><span style="width: 85%;">Node.js</span></div>
-            </div>
-
-            <!-- Web Technologies -->
-            <div class="skill-category">
-                <h3>Web Technologies</h3>
-                <div class="skill-bar"><span style="width: 95%;">HTML5</span></div>
-                <div class="skill-bar"><span style="width: 90%;">CSS3</span></div>
-                <div class="skill-bar"><span style="width: 85%;">Bootstrap</span></div>
-                <div class="skill-bar"><span style="width: 88%;">Tailwind CSS</span></div>
-                <div class="skill-bar"><span style="width: 95%;">JavaScript</span></div>
-            </div>
-
-            <!-- Tools & Platforms -->
-            <div class="skill-category">
-                <h3>Tools & Platforms</h3>
-                <div class="skill-bar"><span style="width: 100%;">Git</span></div>
-                <div class="skill-bar"><span style="width: 100%;">GitHub</span></div>
-                <div class="skill-bar"><span style="width: 95%;">Visual Studio</span></div>
-                <div class="skill-bar"><span style="width: 95%;">VS Code</span></div>
-                <div class="skill-bar"><span style="width: 88%;">Postman</span></div>
-            </div>
-
-            <!-- Databases & DBMS -->
-            <div class="skill-category">
-                <h3>Databases & DBMS</h3>
-                <div class="skill-bar"><span style="width: 92%;">SQL Server</span></div>
-                <div class="skill-bar"><span style="width: 90%;">MariaDB</span></div>
-                <div class="skill-bar"><span style="width: 88%;">MySQL</span></div>
-                <div class="skill-bar"><span style="width: 85%;">SQLite</span></div>
-            </div>
-
-            <!-- Core Concepts -->
-            <div class="skill-category">
-                <h3>Core Concepts</h3>
-                <div class="skill-bar"><span style="width: 95%;">OOP</span></div>
-                <div class="skill-bar"><span style="width: 88%;">Data Structures & Algorithms</span></div>
-                <div class="skill-bar"><span style="width: 85%;">Software Engineering</span></div>
-                <div class="skill-bar"><span style="width: 80%;">Operating Systems</span></div>
-                <div class="skill-bar"><span style="width: 90%;">MVC Architecture</span></div>
+            <div class="story-image">
+                <div class="journey-visual">
+                    <div class="journey-milestone">
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2021</span>
+                            <p>First explored programming and databases</p>
+                        </div>
+                    </div>
+                    <div class="journey-milestone">
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2022</span>
+                            <p>Started Computer Science degree</p>
+                        </div>
+                    </div>
+                    <div class="journey-milestone">
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2023</span>
+                            <p>Built eCommerce project at ITI</p>
+                        </div>
+                    </div>
+                    <div class="journey-milestone">
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2024</span>
+                            <p>Worked on advanced projects (OpenGL, AR, SQL, Examination System)</p>
+                        </div>
+                    </div>
+                    <div class="journey-milestone">
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">Now</span>
+                            <p>Backend developer in DEPI program, mastering Node.js & .NET</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- services Section -->
-<section id="services" class="services-section">
-    <h2 class="section-title fade-in">Offered Services</h2>
-    <div class="services-container">
 
-        <div class="service-card fade-in">
-            <div class="service-icon">💻</div>
-            <h3>Backend Development</h3>
-            <p>Building secure, scalable, and efficient server-side applications using .NET Core, Laravel, and Node.js.</p>
+    <!-- Education Section -->
+    <section id="education" class="education-timeline">
+        <div class="container">
+            <h2 class="section-title fade-in">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Science</h3>
+                        <span class="education-duration">2022 – 2026</span>
+                        <p class="education-institution">Benha University</p>
+                        <p class="education-gpa"><strong>GPA:</strong> 3.6</p>
+                        <p class="education-coursework">
+                            <strong>Relevant Coursework:</strong> Object-Oriented Programming, Data Structure, Algorithms,
+                            Software Engineering, Database, System Analysis
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="service-card fade-in">
-            <div class="service-icon">🗄️</div>
-            <h3>Database Design & Optimization</h3>
-            <p>Designing and optimizing SQL Server, MySQL, and MariaDB databases for high performance and reliability.</p>
-        </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills</h2>
+            <div class="skills-grid fade-in">
+                <!-- Languages & Databases -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Databases</h3>
+                    <div class="skill-bar"><span data-width="90%">C#</span></div>
+                    <div class="skill-bar"><span data-width="85%">C++</span></div>
+                    <div class="skill-bar"><span data-width="85%">Java</span></div>
+                    <div class="skill-bar"><span data-width="85%">Python</span></div>
+                    <div class="skill-bar"><span data-width="90%">JavaScript</span></div>
+                    <div class="skill-bar"><span data-width="90%">PHP</span></div>
+                    <div class="skill-bar"><span data-width="92%">SQL</span></div>
+                </div>
 
-        <div class="service-card fade-in">
-            <div class="service-icon">🌐</div>
-            <h3>Full-Stack Development</h3>
-            <p>Creating end-to-end web solutions with clean frontend and robust backend integration.</p>
-        </div>
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cubes"></i> Frameworks & Libraries</h3>
+                    <div class="skill-bar"><span data-width="92%">.NET Core</span></div>
+                    <div class="skill-bar"><span data-width="90%">ASP.NET MVC</span></div>
+                    <div class="skill-bar"><span data-width="88%">Laravel</span></div>
+                    <div class="skill-bar"><span data-width="85%">Node.js</span></div>
+                </div>
 
-        <div class="service-card fade-in">
-            <div class="service-icon">📊</div>
-            <h3>System Analysis & Design</h3>
-            <p>Analyzing requirements and crafting software architecture that aligns with business goals.</p>
+                <!-- Web Technologies -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skill-bar"><span data-width="95%">HTML5</span></div>
+                    <div class="skill-bar"><span data-width="90%">CSS3</span></div>
+                    <div class="skill-bar"><span data-width="85%">Bootstrap</span></div>
+                    <div class="skill-bar"><span data-width="88%">Tailwind CSS</span></div>
+                    <div class="skill-bar"><span data-width="95%">JavaScript</span></div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-bar"><span data-width="100%">Git</span></div>
+                    <div class="skill-bar"><span data-width="100%">GitHub</span></div>
+                    <div class="skill-bar"><span data-width="95%">Visual Studio</span></div>
+                    <div class="skill-bar"><span data-width="95%">VS Code</span></div>
+                    <div class="skill-bar"><span data-width="88%">Postman</span></div>
+                </div>
+
+                <!-- Databases & DBMS -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & DBMS</h3>
+                    <div class="skill-bar"><span data-width="92%">SQL Server</span></div>
+                    <div class="skill-bar"><span data-width="90%">MariaDB</span></div>
+                    <div class="skill-bar"><span data-width="88%">MySQL</span></div>
+                    <div class="skill-bar"><span data-width="85%">SQLite</span></div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Core Concepts</h3>
+                    <div class="skill-bar"><span data-width="95%">OOP</span></div>
+                    <div class="skill-bar"><span data-width="88%">Data Structures & Algorithms</span></div>
+                    <div class="skill-bar"><span data-width="85%">Software Engineering</span></div>
+                    <div class="skill-bar"><span data-width="80%">Operating Systems</span></div>
+                    <div class="skill-bar"><span data-width="90%">MVC Architecture</span></div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Offered Services</h2>
+            <div class="services-container">
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Building secure, scalable, and efficient server-side applications using .NET Core, Laravel, and Node.js.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Design & Optimization</h3>
+                    <p>Designing and optimizing SQL Server, MySQL, and MariaDB databases for high performance and reliability.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Creating end-to-end web solutions with clean frontend and robust backend integration.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>System Analysis & Design</h3>
+                    <p>Analyzing requirements and crafting software architecture that aligns with business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -194,63 +293,71 @@
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="images/ECommerce.png" alt="">
+                        <img src="images/ECommerce.png" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <a href="https://github.com/AlyaaGamal003/ITI_E_commerce_.NET" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="project-content">
                         <h3>E-Commerce Platform</h3>
                         <p>
-                    Developed with .NET Core MVC and SQL Server. Included secure authentication, payment processing, and product management.
-                    Optimized queries for speed and reliability.
-                </p>
+                            Developed with .NET Core MVC and SQL Server. Included secure authentication, payment processing, and product management.
+                            Optimized queries for speed and reliability.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">.NET Core MVC</span>
                             <span class="tech-tag">SQL Server</span>
                             <span class="tech-tag">C#</span>
                             <span class="tech-tag">Bootstrap</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/AlyaaGamal003/ITI_E_commerce_.NET">GitHub</a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="project-card fade-in">
-                    <div class="project-image"><img src="images/game.png" alt=""></div>
+                    <div class="project-image">
+                        <img src="images/game.png" alt="Game Library System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/AlyaaGamal003/Game_Library_Website_Laravel" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3>Game Library System</h3>
-                         <p>
-                    Laravel-based system with secure authentication, admin controls, and game categorization.
-                    Implemented MVC architecture and optimized SQL queries for performance and scalability.
-                </p>
+                        <p>
+                            Laravel-based system with secure authentication, admin controls, and game categorization.
+                            Implemented MVC architecture and optimized SQL queries for performance and scalability.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">Laravel</span>
                             <span class="tech-tag">MariaDB</span>
                             <span class="tech-tag">Bootstrap</span>
                             <span class="tech-tag">Tailwind CSS</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/AlyaaGamal003/Game_Library_Website_Laravel">GitHub</a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="project-card fade-in">
-                    <div class="project-image"><img src="images/library.png" alt=""></div>
+                    <div class="project-image">
+                        <img src="images/library.png" alt="Python Book Loan System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/AlyaaGamal003/Python_Library_System" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3>Python Book Loan System</h3>
-                         <p>
-                    Backend system for managing book loans, returns, and overdue tracking.
-                    Ensured data accuracy through input validation and logical checks.
-                </p>
+                        <p>
+                            Backend system for managing book loans, returns, and overdue tracking.
+                            Ensured data accuracy through input validation and logical checks.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">SQLite</span>
-
-                        </div>
-                        <div class="project-links">
-
-                            <a href="https://github.com/AlyaaGamal003/Python_Library_System">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -263,8 +370,7 @@
         <div class="container">
             <h2 class="section-title fade-in">Get In Touch</h2>
             <div class="contact-content fade-in">
-                <p>I'm always interested in new opportunities and collaborations. Let's create something amazing
-                    together!</p>
+                <p>I'm always interested in new opportunities and collaborations. Let's create something amazing together!</p>
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -288,10 +394,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/AlyaaGamal003/">GitHub</a>
-                <a href="https://www.linkedin.com/in/alyaa-gamal-885016278">LinkedIn</a>
-               
-                  <a href="mailto:galyaa742004@gmail.com">Email</a>
+                <a href="https://github.com/AlyaaGamal003/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alyaa-gamal-885016278" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:galyaa742004@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
             <p>&copy; 2025 Alyaa Gamal. All rights reserved.</p>
         </div>
