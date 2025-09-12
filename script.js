@@ -1,3 +1,7 @@
+// FORCE DARK MODE IMMEDIATELY - runs before anything else
+document.documentElement.setAttribute('data-theme', 'dark');
+localStorage.setItem('theme', 'dark');
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -142,11 +146,16 @@ window.addEventListener('scroll', () => {
     progressBar.style.width = scrolled + '%';
 });
 
-// Add theme toggle functionality
+// Add theme toggle functionality - FORCE DARK MODE BY DEFAULT
 function initThemeToggle() {
     const themeToggle = document.createElement('button');
     themeToggle.id = 'theme-toggle';
-    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    
+    // Force dark mode as default
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Sun icon for dark mode
+    
     themeToggle.style.position = 'fixed';
     themeToggle.style.bottom = '20px';
     themeToggle.style.right = '20px';
@@ -166,19 +175,10 @@ function initThemeToggle() {
     
     document.body.appendChild(themeToggle);
     
-    // Check for saved theme preference or respect OS preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-    
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         if (currentTheme === 'dark') {
-            document.documentElement.removeAttribute('data-theme');
+            document.documentElement.setAttribute('data-theme', 'light');
             themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
             localStorage.setItem('theme', 'light');
         } else {

@@ -1,13 +1,20 @@
-/* Set dark mode as default */
 :root {
+    /* Dark mode as DEFAULT */
     --text-dark: #f3f4f6;
     --text-light: #d1d5db;
     --bg-light: #111827;
     --bg-white: #1f2937;
     --bg-card: #374151;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #7e22ce;
+    --accent: #f59e0b;
+    --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Light mode variables - will be applied only if data-theme="light" */
+/* Light mode variables - applied only when explicitly set */
 [data-theme="light"] {
     --text-dark: #1f2937;
     --text-light: #6b7280;
@@ -15,20 +22,24 @@
     --bg-white: #ffffff;
     --bg-card: #ffffff;
 }
-:root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary: #7e22ce;
-    --accent: #f59e0b;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f9fafb;
-    --bg-white: #ffffff;
-    --bg-card: #ffffff;
-    --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+/* Rest of your CSS remains the same */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+    background-color: var(--bg-light);
+}
+
+
+
 
 * {
     margin: 0;
